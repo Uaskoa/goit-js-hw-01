@@ -7,10 +7,11 @@ let totralPrice;
 console.log(purchaseQuantity);
 
 if (purchaseQuantity === null) {
-  console.log((message = "Отменено пользователем!"));
+  console.log("Отменено пользователем!");
 } else {
   purchaseQuantity = Number(purchaseQuantity);
-  console.log((totralPrice = pricePerDroid * purchaseQuantity));
+  totralPrice = pricePerDroid * purchaseQuantity;
+  console.log(totralPrice);
   if (totralPrice > credits) {
     console.log("Недостаточно средств на счету!");
   } else {
